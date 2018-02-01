@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrosmaNews.Android", "Krosm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrosmaNews.iOS", "KrosmaNews\KrosmaNews.iOS\KrosmaNews.iOS.csproj", "{67BC1AD0-D860-49BB-85C1-CE75967CB1DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KrosmaNews", "KrosmaNews\KrosmaNews\KrosmaNews.csproj", "{60447C67-8C5E-4BAF-B4BD-8A9C42BB48F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KrosmaNews", "KrosmaNews\KrosmaNews\KrosmaNews.csproj", "{60447C67-8C5E-4BAF-B4BD-8A9C42BB48F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

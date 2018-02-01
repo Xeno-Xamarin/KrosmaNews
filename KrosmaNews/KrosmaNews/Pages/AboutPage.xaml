@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:core="clr-namespace:KrosmaNews.Core;assembly=KrosmaNews"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:freshEssentials="clr-namespace:FreshEssentials;assembly=FreshEssentials"
              x:Class="KrosmaNews.Pages.AboutPage">
     <ContentPage.Content>
         <StackLayout>
@@ -12,6 +13,19 @@
             <Label Text="Welcome to Xamarin.Forms!" 
                   />
             <forms:CachedImage Source="https://icon-icons.com/icons2/67/PNG/64/weightliftsport_weightlift_13267.png"></forms:CachedImage>
+
+            <ListView ItemsSource="{Binding MyCars}" freshEssentials:ListViewItemTappedAttached.Command="{Binding ItemTapCommand}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="Fill" BackgroundColor="SlateBlue">
+                                <Label Text = "{Binding ModelName}" FontSize="24" />
+                                <Label Text = "{Binding SerialNumber}" />
+                            </StackLayout>
+                        </ViewCell>s
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </core:BasePage>
