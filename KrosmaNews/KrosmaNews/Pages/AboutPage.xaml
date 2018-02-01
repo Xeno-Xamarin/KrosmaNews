@@ -2,17 +2,16 @@
 <core:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:core="clr-namespace:KrosmaNews.Core;assembly=KrosmaNews"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="KrosmaNews.Pages.AboutPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!" 
-                  />
 
             <Label Text="{Binding Bienvenue}"
                 />
             <Label Text="Welcome to Xamarin.Forms!" 
                   />
-
+            <forms:CachedImage Source="https://icon-icons.com/icons2/67/PNG/64/weightliftsport_weightlift_13267.png"></forms:CachedImage>
         </StackLayout>
     </ContentPage.Content>
 </core:BasePage>
