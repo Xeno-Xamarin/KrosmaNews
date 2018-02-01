@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using FreshMvvm;
+using KrosmaNews.PageModels;
+using KrosmaNews.Pages;
 using Xamarin.Forms;
 
 namespace KrosmaNews
@@ -13,7 +15,11 @@ namespace KrosmaNews
 		{
 			InitializeComponent();
 
-			MainPage = new KrosmaNews.MainPage();
+			var masterDetailNav = new FreshMasterDetailNavigationContainer();
+			masterDetailNav.Init("Menu");
+			masterDetailNav.AddPage<AboutPageModel>("about 1", null);
+			masterDetailNav.AddPage<AboutPageModel>("about 2 ", null);
+			MainPage = masterDetailNav;
 		}
 
 		protected override void OnStart ()
